@@ -7,3 +7,38 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+    text-align: center;
+    font-family: 'Russo one', sans-serif;
+    margin: 1em auto;
+}
+.question, #resultat {
+    margin: 1em auto;
+    padding : 1em;
+    box-shadow: 0 0 10px gray;
+    border-radius: 5px;
+    width: 50%;
+}
+input {
+    margin-right: .5em;
+}
+h3, p {
+    margin-bottom: .5em;
+}
+#validation {
+    margin:  1em auto;
+    display: block;
+    padding: 1em;
+}
+#resultat {
+    text-align: center;
+}
+.false {
+    background-color: #FFBEB9;
+}
+.true {
+    background-color: #89DF91;
+}
+#score {
+    font-weight: 700;
+}
