@@ -13,67 +13,67 @@
         <div class="question" id="q1">
             <h3>Qui est l'empereur de France le 2 décembre 1804 ?</h3>
             <div>
-                <input type="radio" name="q1" value="Clovis"/>Clovis
+                <input type="radio" id="perso1" name="q1" value="Clovis"/><label for="perso1">Clovis</label>
             </div>
             <div>
-                <input type="radio" name="q1" value="Abraham Lincoln"/>Abraham Lincoln
+                <input type="radio" id="perso2" name="q1" value="Abraham Lincoln"/><label for="perso2">Abraham Lincoln</label>
             </div>
             <div>
-                <input type="radio" name="q1" value="Napoleon Bonaparte"/>Napoleon Bonaparte
+                <input type="radio" id="perso3" name="q1" value="Napoleon Bonaparte"/><label for="perso3">Napoleon Bonaparte</label>
             </div>
         </div>
         <div class="question" id="q2">
             <h3>Quelle est la date d'indépendance des Etats-Unis ?</h3>
             <div>
-                <input type="radio" name="q2" value="4 juillet 1776"/>4 juillet 1776
+                <input type="radio" id="date1" name="q2" value="4 juillet 1776"/><label for="date1">4 juillet 1776</label>
             </div>
             <div>
-                <input type="radio" name="q2" value="18 avril 1856"/>18 avril 1856
+                <input type="radio" id="date2" name="q2" value="18 avril 1856"/><label for="date2">18 avril 1856</label>
             </div>
             <div>
-                <input type="radio" name="q2" value="30 juin 1925"/>30 juin 1925
+                <input type="radio" id="date3" name="q2" value="30 juin 1925"/><label for="date3">30 juin 1925</label>
             </div>
         </div>
         <div class="question" id="q3">
             <h3>La chute de l'empire Romain se situe en ?</h3>
             <div>
-                <input type="radio" name="q3" value="15 après J.C"/>15 après J.C
+                <input type="radio" id="date4" name="q3" value="15 après J.C"/><label for="date4">15 après J.C</label>
             </div>
             <div>
-                <input type="radio" name="q3" value="395 après J.C"/>395 après J.C
+                <input type="radio" id="date5" name="q3" value="395 après J.C"/><label for="date5">395 après J.C</label>
             </div>
             <div>
-                <input type="radio" name="q3" value="-740 avant J.C"/>-740 avant J.C
+                <input type="radio" id="date6" name="q3" value="-740 avant J.C"/><label for="date6">-740 avant J.C</label>
             </div>
         </div>
         <div class="question" id="q4">
             <h3>Quelle est la capitale de la Slovénie ?</h3>
             <div>
-                <input type="radio" name="q4" value="Ljubljana"/><label for="">Ljubljana</label>
+                <input type="radio" id="ville1" name="q4" value="Ljubljana"/><label for="ville1">Ljubljana</label>
             </div>
             <div>
-                <input type="radio" name="q4" value="Belgrade"/><label for="">Belgrade</label>
+                <input type="radio" id="ville2" name="q4" value="Belgrade"/><label for="ville2">Belgrade</label>
             </div>
             <div>
-                <input type="radio" name="q4" value="Bratislava"/><label for="">Bratislava</label>
+                <input type="radio" id="ville3" name="q4" value="Bratislava"/><label for="ville3">Bratislava</label>
             </div>
         </div>
         <div class="question" id="q5">
             <h3>Combien d'habitants compte l'Irlande en 2020 ?</h3>
             <div>
-                <input type="radio" name="q5" value="1,365 Million"/><label for="1,365 Million">1,365 Million</label>
+                <input type="radio" id="pop1" name="q5" value="1,365 Million"/><label for="pop1">1,365 Million</label>
             </div>
             <div>
-                <input type="radio" name="q5" value="21 Millions"/><label for="21 Millions">21 Millions</label>
+                <input type="radio" id="pop2" name="q5" value="21 Millions"/><label for="pop2">21 Millions</label>
             </div>            <div>
-                <input type="radio" name="q5" value="4,9 Millions"/><label for="4,9 Millions">4,9 Millions</label>
+                <input type="radio" id="pop3" name="q5" value="4,9 Millions"/><label for="pop3">4,9 Millions</label>
             </div>
         </div>
-        <button id="validation">Valider vos choix !</button>
+        <button id="formBtn" type="submit">Valider vos choix !</button>
     </form>
     <div id="resultat">
-        <h4 id="appreciation"></h4>
-        <p>Re-tente une autre réponse dans les cases rouges, puis re-valides !.</p>
+        <h5 id="appreciation">Cliquez sur le bouton valider pour voir vos résultats</h5>
+        <p id="aide"></p>
         <p id="score"></p>
     </div>
     <script src="app.js"></script>
