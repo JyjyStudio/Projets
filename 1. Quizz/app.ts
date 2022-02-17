@@ -1,14 +1,13 @@
-"use strict"
 const form = document.getElementById("form") as HTMLFormElement;
 const score = document.getElementById('score') as HTMLElement;
 const resultatFinal = document.getElementById('resultat') as HTMLElement;
+const aide = document.getElementById('aide') as HTMLElement;
 const appreciation = document.getElementById('appreciation') as HTMLElement;
 let resultat = 0;
 
-resultatFinal.style.display = "none";
-
 form.addEventListener('submit', function(e) {
     e.preventDefault();
+    resultatFinal.classList.add('resultat2');
     const formData = new FormData(this);
     const formResponses = Object.fromEntries(formData);
     if (formResponses.q1 == 'Napoleon Bonaparte') {
@@ -44,22 +43,27 @@ form.addEventListener('submit', function(e) {
     switch (resultat) {
         case 0:
             appreciation.textContent = "C'est nul, Recommences !"
+            aide.textContent = 'Re-tente une autre réponse dans les cases rouges, puis re-valides !'
             break;
     
         case 1:
             appreciation.textContent = "C'est pas fameux.. Recommences !"
+            aide.textContent = 'Re-tente une autre réponse dans les cases rouges, puis re-valides !'
             break;
     
         case 2:
             appreciation.textContent = "C'est insuffisant.. Recommences !"
+            aide.textContent = 'Re-tente une autre réponse dans les cases rouges, puis re-valides !'
             break;
     
         case 3:
             appreciation.textContent = "C'est moyen.. Recommences !"
+            aide.textContent = 'Re-tente une autre réponse dans les cases rouges, puis re-valides !'
             break;
     
         case 4:
             appreciation.textContent = "C'est presque parfait, Recommences !"
+            aide.textContent = 'Re-tente une autre réponse dans les cases rouges, puis re-valides !'
             break;
         case 5:
             appreciation.textContent = "Bravo, C'est un sans faute !"
@@ -68,7 +72,6 @@ form.addEventListener('submit', function(e) {
         default:
             break;
     }
-    resultatFinal.style.display = "block";
     score.textContent = `${resultat}/5`;
     resultat = 0;
 })
